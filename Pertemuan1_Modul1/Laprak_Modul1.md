@@ -38,14 +38,12 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-Output_angka_ke_tulisan.png
+![Screenshot Output Kalkulator](Output_kalkulator.png)
 contoh :
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
+![Screenshot Output Kalkulator](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan1_Modul1/Output_kalkulator.png)
 
-##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 1 
+penjelasan unguided 1
+Program membaca dua bilangan float, lalu mencetak hasil tambah, kurang, kali, dan bagi. Sebelum membagi, dicek dulu b != 0 supaya tidak terjadi pembagian dengan nol.Program membaca dua bilangan float, lalu mencetak hasil tambah, kurang, kali, dan bagi. Sebelum membagi, dicek dulu b != 0 supaya tidak terjadi pembagian dengan nol.
 
 ### 2. (Buatlah sebuah program yang menerima masukan angka dan mengeluarkan output nilai angka tersebut dalam bentuk tulisan. Angka yang akan di-input-kan user adalah bilangan bulat positif mulai dari 0 s.d 100)
 
@@ -88,15 +86,13 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output angkaKeTulisan](Output_angka_ke_tulisan.png)
 
 contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output angkaKeTulisan](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan1_Modul1/Output_angka_ke_tulisan.png)
 
 penjelasan unguided 2
+Angka dipecah per rentang 0-9 diambil dari array satuan[], 10 dan 11 ditulis khusus ("sepuluh", "sebelas"), 12-19 memakai "belas", 20-99 memakai n / 10 untuk puluhan dan n % 10 untuk satuan, dan 100 jadi "seratus".
 
 ### 3. (Buatlah program yang dapat memberikan input dan output sbb.)
 
@@ -132,7 +128,7 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Pola Cermin Angka](Output_pola_ceremin_angka.png)
 
 contoh :
 ![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
@@ -141,9 +137,10 @@ contoh :
 ![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
 
 penjelasan unguided 3
+Satu loop mengatur baris (k turun dari n ke 0), dan tiap baris mencetak spasi, angka turun, tanda *, lalu angka naik. Spasi bertambah 2 di tiap baris, jadi bentuknya menyempit ke bawah.
 
 ## Kesimpulan
-...
+Modul 1 praktikum Struktur Data ini membahas dasar-dasar penggunaan *Integrated Development Environment* (IDE) Code::Blocks serta pengenalan bahasa pemrograman C++ yang mencakup struktur dasar program, penggunaan tipe data, variabel, konstanta, operator aritmatika, logika, hingga *input/output*. Selain itu, modul ini juga mempelajari penerapan fungsi kondisional (*if*, *if-else*, *switch*), perulangan (*for*, *while*, *do-while*), tipe data bentukan (*struct*), serta modularisasi program menggunakan fungsi untuk menyelesaikan berbagai studi kasus pemrograman dasar.
 
 ## Referensi
 [1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
