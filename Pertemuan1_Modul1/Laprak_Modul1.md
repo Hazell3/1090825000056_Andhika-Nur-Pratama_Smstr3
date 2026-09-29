@@ -39,8 +39,6 @@ int main() {
 
 ##### Output 1
 ![Screenshot Output Kalkulator](Output_kalkulator.png)
-contoh :
-![Screenshot Output Kalkulator](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan1_Modul1/Output_kalkulator.png)
 
 penjelasan unguided 1
 Program membaca dua bilangan float, lalu mencetak hasil tambah, kurang, kali, dan bagi. Sebelum membagi, dicek dulu b != 0 supaya tidak terjadi pembagian dengan nol.Program membaca dua bilangan float, lalu mencetak hasil tambah, kurang, kali, dan bagi. Sebelum membagi, dicek dulu b != 0 supaya tidak terjadi pembagian dengan nol.
@@ -88,9 +86,6 @@ int main() {
 ##### Output 1
 ![Screenshot Output angkaKeTulisan](Output_angka_ke_tulisan.png)
 
-contoh :
-![Screenshot Output angkaKeTulisan](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan1_Modul1/Output_angka_ke_tulisan.png)
-
 penjelasan unguided 2
 Angka dipecah per rentang 0-9 diambil dari array satuan[], 10 dan 11 ditulis khusus ("sepuluh", "sebelas"), 12-19 memakai "belas", 20-99 memakai n / 10 untuk puluhan dan n % 10 untuk satuan, dan 100 jadi "seratus".
 
@@ -129,9 +124,6 @@ int main() {
 
 ##### Output 1
 ![Screenshot Output Pola Cermin Angka](Output_pola_ceremin_angka.png)
-
-contoh :
-![Screenshot Output Unguided Pola Cermin Angka](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan1_Modul1/Output_pola_ceremin_angka.png)
 
 penjelasan unguided 3
 Satu loop mengatur baris (k turun dari n ke 0), dan tiap baris mencetak spasi, angka turun, tanda *, lalu angka naik. Spasi bertambah 2 di tiap baris, jadi bentuknya menyempit ke bawah.
