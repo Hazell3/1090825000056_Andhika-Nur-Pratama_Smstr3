@@ -131,10 +131,7 @@ int main() {
 ![Screenshot Output Pola Cermin Angka](Output_pola_ceremin_angka.png)
 
 contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided Pola Cermin Angka](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan1_Modul1/Output_pola_ceremin_angka.png)
 
 penjelasan unguided 3
 Satu loop mengatur baris (k turun dari n ke 0), dan tiap baris mencetak spasi, angka turun, tanda *, lalu angka naik. Spasi bertambah 2 di tiap baris, jadi bentuknya menyempit ke bawah.
