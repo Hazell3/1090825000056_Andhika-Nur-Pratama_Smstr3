@@ -1,8 +1,8 @@
-# <h1 align="center">Laporan Praktikum Modul 2 - Pengenalan Bahas C++ (Bagian Kedua)</h1>
+# <h1 align="center">Laporan Praktikum Modul 2 - Pengenalan Bahasa C++ (Bagian Kedua)</h1>
 <p align="center">Andhika Nur Pratama - 109082500056</p>
 
 ## Dasar Teori
-Dasar teori Bahasa C++ mencakup pembahasan mengenai array yang terdiri dari array satu dimensi, dua dimensi, serta array berdimensi banyak untuk menyimpan kumpulan data dengan tipe seragam. Selain itu, dipelajari pula konsep pointer dan memori yang merepresentasikan alamat memori serta pemanfaatannya dalam mengakses elemen array maupun string. Modul ini juga membahas fungsi dan prosedur sebagai blok kode terstruktur untuk menjalankan tugas khusus—di mana prosedur tidak mengembalikan nilai balik—serta mekanisme pelewatan parameter fungsi (parameter passing) yang meliputi metode call by value, call by pointer, dan call by reference.
+<div align="justify">Dasar teori Bahasa C++ mencakup pembahasan mengenai array yang terdiri dari array satu dimensi, dua dimensi, serta array berdimensi banyak untuk menyimpan kumpulan data dengan tipe seragam. Selain itu, dipelajari pula konsep pointer dan memori yang merepresentasikan alamat memori serta pemanfaatannya dalam mengakses elemen array maupun string. Modul ini juga membahas fungsi dan prosedur sebagai blok kode terstruktur untuk menjalankan tugas khusus—di mana prosedur tidak mengembalikan nilai balik—serta mekanisme pelewatan parameter fungsi (parameter passing) yang meliputi metode call by value, call by pointer, dan call by reference.</div>
 
 ## Guided 
 
