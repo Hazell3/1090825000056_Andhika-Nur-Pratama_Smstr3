@@ -2,21 +2,19 @@
 <p align="center">Andhika Nur Pratama - 109082500056</p>
 
 ## Dasar Teori
-isi dengan penjelasan dasar teori disertai referensi jurnal (gunakan kurung siku [] untuk pernyataan yang mengambil refernsi dari jurnal).
-contoh :
-<div align="justify">Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk struktur data yang berisi kumpulan data yang tersusun secara sekuensial, saling bersambungan, dinamis, dan terbatas[1]. Linked list terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer.</div>
+<div align="justify">Abstract Data Type (ADT) adalah definisi statik yang terdiri dari sebuah tipe data dan sekumpulan primitif atau operasi dasar, serta dapat mengandung definisi ADT lain di dalamnya[cite: 1]. Dalam penerapannya, ADT diimplementasikan secara modular yang mencakup file spesifikasi header (`.h`) untuk mendefinisikan tipe dan purwarupa fungsi, file badan (`.cpp`) untuk realisasi kode program yang memanfaatkan konstruktor serta selektor, dan program utama (*driver*) untuk menjalankan alur logika program[cite: 1, 2, 3]. Pemisahan struktur ini bertujuan untuk menyembunyikan rincian implementasi internal sehingga program menjadi lebih terstruktur, modular, dan mudah dikembangkan.</div>
 
-### A. ...<br/>
+### A. Konsep Dasar Abstract Data Type (ADT)<br/>
 ...
-#### 1. ...
-#### 2. ...
-#### 3. ...
+#### 1. Definisi Tipe dan Primitif
+#### 2. Struktur Modul ADT
+#### 3. Keunggulan Penggunaan ADT
 
-### B. ...<br/>
+### B. Implementasi ADT dalam Bahasa Pemrograman C++<br/>
 ...
-#### 1. ...
-#### 2. ...
-#### 3. ...
+#### 1. File Header (.h)
+#### 2. File Implementasi (.cpp)
+#### 3. Program Utama (main.cpp)
 
 ## Guided 
 
@@ -157,15 +155,9 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan3_Modul3/Unguided/Data_Mahasiswa/Output%20dataMahasiswa.png)
 
-contoh :
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 1 
+Program ini menyimpan data maksimal 10 mahasiswa. Struct mahasiswa berisi nama, nim, uts, uas, tugas, dan nilaiAkhir, lalu dipisah menjadi tiga file: mahasiswa.h untuk deklarasi, mahasiswa.cpp untuk isi fungsi, dan main.cpp sebagai program utama. Fungsi inputMhs membaca data dari keyboard dan langsung mengisi nilai akhir lewat hitungNilaiAkhir (rumus 0.3uts + 0.4uas + 0.3*tugas), sedangkan tampilMhs mencetak datanya. Di main, array dataMhs[10] diisi dan ditampilkan memakai perulangan for.
 
 ### 2. (Mata Pelajaran)
 
@@ -222,15 +214,9 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan3_Modul3/Unguided/Mata_Pelajaran/Output%20Mapel.png)
 
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 2
+ADT pelajaran dibuat dari struct berisi namaMapel dan kodeMapel, lalu dipisah menjadi tiga file: mapel.h untuk type dan deklarasi fungsi, mapel.cpp untuk isi fungsi, dan main.cpp sebagai program utama. Fungsi create_pelajaran adalah konstruktor yang membuat variabel pelajaran dari nama dan kode yang diberikan, lalu mengembalikannya. Prosedur tampil_pelajaran mencetak isinya ke layar, sehingga main menampilkan “nama pelajaran : Struktur Data” dan “nilai : STD”.
 
 ### 3. (Fungsi & Procedure)
 
@@ -300,18 +286,12 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan3_Modul3/Unguided/Fungsi%20%26%20Procedure/Output%20Fungsi%26Procedure.png)
 
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 3
+Program ini memakai dua array 2D berukuran 3x3 dan dua pointer integer. Fungsi tampilArray mencetak isi array dengan dua for bersarang, dan tukarArray menukar elemen A dan B pada posisi baris dan kolom yang dipilih lewat variabel sementara temp. Fungsi tukarPointer menukar isi dua variabel yang ditunjuk pointer, jadi elemen array aslinya ikut berubah karena pointer menyimpan alamatnya.
 
 ## Kesimpulan
-...
+Kesimpulan yang dapat diambil adalah bahwa Abstract Data Type (ADT) merupakan definisi statik yang terdiri dari tipe data dan sekumpulan operasi dasar (primitif) untuk menyarikan struktur data serta menyembunyikan rincian implementasi internal dari pengguna. Dalam penerapannya pada bahasa pemrograman seperti C++, ADT diimplementasikan secara modular melalui pemisahan file spesifikasi header (.h), file implementasi (.cpp), dan program utama (driver). Pemisahan struktur ini menjadikan kode program lebih terstruktur, mudah dipelihara, serta aman dari modifikasi langsung pada struktur data internalnya.
 
 ## Referensi
 [1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
