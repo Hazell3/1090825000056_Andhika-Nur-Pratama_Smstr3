@@ -33,7 +33,7 @@ Array nilai menyimpan 5 angka, lalu perulangan for mencetak semuanya dengan nomo
 
 ### 2. Array 2 Dimensi
 
-```C++
+```C++ 
 #include <iostream>
 using namespace std;
 
