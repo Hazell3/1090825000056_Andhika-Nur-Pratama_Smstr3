@@ -5,6 +5,7 @@
 <div align ="justify">Linked List atau senarai berantai merupakan salah satu bentuk struktur data linear yang terdiri dari kumpulan elemen atau node yang saling terhubung menggunakan pointer. Setiap node menyimpan data dan alamat node berikutnya sehingga membentuk suatu rangkaian data yang dinamis. Berbeda dengan array, Linked List tidak memerlukan penyimpanan elemen secara berurutan di dalam memori. Struktur data ini memiliki beberapa jenis, yaitu Singly Linked List, Doubly Linked List, dan Circular Linked List. Operasi yang dapat dilakukan pada Linked List meliputi penambahan, penghapusan, pencarian, dan penelusuran data. Linked List memiliki kelebihan berupa fleksibilitas dalam pengelolaan data, tetapi membutuhkan memori tambahan untuk menyimpan pointer. Oleh karena itu, Linked List banyak digunakan dalam pengembangan berbagai struktur data dan aplikasi komputer yang membutuhkan pengelolaan data secara dinamis.<div/>
 
 ### A. Konsep Dasar Linked List<br/>
+
 #### 1. Definisi
 #### 2. Alasan Menggunakan Pointer
 #### 3. Model ADT Linked List
@@ -17,22 +18,26 @@
 #### 5. Komponen dalam setiap elemen terdiri dari Data (informasi utama) dan Successor (next, penunjuk alamat elemen di         depannya).
 
 ### C. Manajemen Memori dan Operasi Primitif<br/>
+
 #### 1. Create List
 #### 2. Alokasi
 #### 3. Dealokasi
 #### 4. Pengecekan List (isEmpty)
 
 ### D. Operasi Penambahan Elemen (Insert)<br/>
+
 #### 1. Insert First
 #### 2. Inserrt Last
 #### 3. Insert After
 
 ### E. Operasi Penghapusan Elemen (Delete)<br/>
+
 #### 1. Delete First
 #### 2. Delete Last
 #### 3. Dealokasi/Delete Elemen
 
 ### F. Oprasi Lainnya<br/>
+
 #### 1. View(printInfo)
 #### 2. Update
 
@@ -336,7 +341,6 @@ struct List {
     address First;
 };
 
-// ===== Soal 1 =====
 void createList(List &L);
 address alokasi(infotype x);
 void dealokasi(address &P);
