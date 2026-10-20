@@ -2,8 +2,6 @@
 <p align="center">Andhika Nur Pratama - 109082500056</p>
 
 ## Dasar Teori
-isi dengan penjelasan dasar teori disertai referensi jurnal (gunakan kurung siku [] untuk pernyataan yang mengambil refernsi dari jurnal).
-contoh :
 <div align ="justify">Linked List atau senarai berantai merupakan salah satu bentuk struktur data linear yang terdiri dari kumpulan elemen atau node yang saling terhubung menggunakan pointer. Setiap node menyimpan data dan alamat node berikutnya sehingga membentuk suatu rangkaian data yang dinamis. Berbeda dengan array, Linked List tidak memerlukan penyimpanan elemen secara berurutan di dalam memori. Struktur data ini memiliki beberapa jenis, yaitu Singly Linked List, Doubly Linked List, dan Circular Linked List. Operasi yang dapat dilakukan pada Linked List meliputi penambahan, penghapusan, pencarian, dan penelusuran data. Linked List memiliki kelebihan berupa fleksibilitas dalam pengelolaan data, tetapi membutuhkan memori tambahan untuk menyimpan pointer. Oleh karena itu, Linked List banyak digunakan dalam pengembangan berbagai struktur data dan aplikasi komputer yang membutuhkan pengelolaan data secara dinamis.<div/>
 
 ### A. Konsep Dasar Linked List<br/>
@@ -351,13 +349,6 @@ void dealokasi(address &P);
 void printInfo(List L);
 void insertFirst(List &L, address P);
 
-// ===== Soal 2 =====
-void deleteFirst(List &L, address &P);
-void deleteLast(List &L, address &P);
-void deleteAfter(address Prec, address &P);
-int nbList(List L);
-void deleteList(List &L);
-
 #endif // SINGLYLIST_H_INCLUDED
 ```
 ```C++
@@ -414,7 +405,6 @@ void deleteLast(List &L, address &P) {
     if (L.First == Nil) {
         P = Nil;
     } else if (L.First->next == Nil) {
-        // hanya ada 1 node
         P = L.First;
         L.First = Nil;
     } else {
@@ -485,13 +475,136 @@ int main() {
 ```
 ### Output Unguided 1 :
 
-##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
+##### Output 
+![Screenshot Output Unguided 1](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan4_Modul4/Unguided/Singlylist/Output%20Soal%201.png)
 
-penjelasan unguided 1 
+Singly Linked List merupakan struktur data dinamis yang terdiri dari kumpulan node yang saling terhubung menggunakan pointer. Setiap node memiliki dua bagian, yaitu `info` untuk menyimpan data dan `next` untuk menyimpan alamat node berikutnya. Pada praktikum Unguided 1, Singly Linked List diimplementasikan menggunakan bahasa C++ melalui tiga file, yaitu `Singlylist.h` sebagai tempat deklarasi struktur data dan prosedur, `Singlylist.cpp` sebagai tempat implementasi prosedur, serta `main.cpp` sebagai program utama. Prosedur `createList()` digunakan untuk menginisialisasi list kosong, `alokasi()` untuk membuat node baru, `dealokasi()` untuk membebaskan memori node, `insertFirst()` untuk menambahkan node pada bagian awal list, dan `printInfo()` untuk menampilkan seluruh data. Karena proses penyisipan dilakukan pada bagian awal, urutan data yang dimasukkan akan terbalik sehingga menghasilkan linked list `9 → 12 → 8 → 0 → 2`.
 
 ### 2. (Dari soal Latihan pertama, lakukan penghapusan node 9 menggunakan deleteFirst(), node 2 menggunakan deleteLast(), dan node 8 menggunakan deleteAfter(). Kemudian tampilkan jumlah node yang tersimpan menggunakan nbList() dan lakukan penghapusan seluruh node menggunakan deleteList().)
+```H
+#ifndef SINGLYLIST_H_INCLUDED
+#define SINGLYLIST_H_INCLUDED
 
+#include <iostream>
+#define Nil NULL
+
+using namespace std;
+
+typedef int infotype;
+typedef struct ElmList *address;
+
+struct ElmList {
+    infotype info;
+    address next;
+};
+
+struct List {
+    address First;
+};
+
+void deleteFirst(List &L, address &P);
+void deleteLast(List &L, address &P);
+void deleteAfter(address Prec, address &P);
+int nbList(List L);
+void deleteList(List &L);
+
+#endif // SINGLYLIST_H_INCLUDED
+```
+```C++
+#include "Singlylist.h"
+
+void createList(List &L) {
+    L.First = Nil;
+}
+
+address alokasi(infotype x) {
+    address P = new ElmList;
+    P->info = x;
+    P->next = Nil;
+    return P;
+}
+
+void dealokasi(address &P) {
+    delete P;
+    P = Nil;
+}
+
+void printInfo(List L) {
+    address P = L.First;
+    if (P == Nil) {
+        cout << "List kosong" << endl;
+        return;
+    }
+    while (P != Nil) {
+        cout << P->info;
+        if (P->next != Nil) {
+            cout << " ";
+        }
+        P = P->next;
+    }
+    cout << endl;
+}
+
+void insertFirst(List &L, address P) {
+    P->next = L.First;
+    L.First = P;
+}
+
+void deleteFirst(List &L, address &P) {
+    if (L.First == Nil) {
+        P = Nil;
+    } else {
+        P = L.First;
+        L.First = P->next;
+        P->next = Nil;
+    }
+}
+
+void deleteLast(List &L, address &P) {
+    if (L.First == Nil) {
+        P = Nil;
+    } else if (L.First->next == Nil) {
+        P = L.First;
+        L.First = Nil;
+    } else {
+        address Q = L.First;
+        while (Q->next->next != Nil) {
+            Q = Q->next;
+        }
+        P = Q->next;
+        Q->next = Nil;
+    }
+}
+
+void deleteAfter(address Prec, address &P) {
+    if (Prec == Nil || Prec->next == Nil) {
+        P = Nil;
+    } else {
+        P = Prec->next;
+        Prec->next = P->next;
+        P->next = Nil;
+    }
+}
+
+int nbList(List L) {
+    int jumlah = 0;
+    address P = L.First;
+    while (P != Nil) {
+        jumlah++;
+        P = P->next;
+    }
+    return jumlah;
+}
+
+void deleteList(List &L) {
+    address P;
+    while (L.First != Nil) {
+        deleteFirst(L, P);
+        dealokasi(P);
+    }
+    cout << "- List Berhasil Terhapus -" << endl;
+}
+```
 ```C++
 #include "Singlylist.h"
 
@@ -533,31 +646,13 @@ int main() {
 ```
 ### Output Unguided 2 :
 
-##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
+##### Output 
+![Screenshot Output Unguided 2](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan4_Modul4/Unguided/Singlylist/Output%20Soal%202.png)
 
-penjelasan unguided 2
-
-### 3. (isi dengan soal unguided 3)
-
-```C++
-source code unguided 3
-```
-### Output Unguided 3 :
-
-##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 3
+Dilakukan operasi penghapusan node pada Singly Linked List yang telah dibuat sebelumnya. Prosedur deleteFirst() digunakan untuk menghapus node pertama, yaitu nilai 9, sehingga list menjadi 12 → 8 → 0 → 2. Selanjutnya, prosedur deleteLast() digunakan untuk menghapus node terakhir, yaitu nilai 2, sehingga list menjadi 12 → 8 → 0. Setelah itu, prosedur deleteAfter() digunakan untuk menghapus node yang berada setelah node pertama, yaitu nilai 8, sehingga tersisa list 12 → 0. Prosedur nbList() kemudian digunakan untuk menghitung jumlah node yang tersisa, yaitu sebanyak 2 node. Terakhir, prosedur deleteList() digunakan untuk menghapus seluruh node dalam linked list sehingga list kembali kosong dan jumlah node menjadi 0. Praktikum ini menunjukkan bahwa Singly Linked List dapat melakukan operasi penghapusan pada bagian awal, akhir, dan setelah node tertentu, serta menghitung jumlah node dan menghapus seluruh elemen dalam list.
 
 ## Kesimpulan
-...
+Kesimpulan dari praktikum Modul 4 tentang Linked List adalah bahwa Linked List merupakan struktur data linear yang bersifat dinamis dan terdiri dari node-node yang saling terhubung menggunakan pointer. Dalam implementasinya menggunakan bahasa C++, setiap node menyimpan data dan alamat node berikutnya sehingga memungkinkan penambahan dan penghapusan data secara fleksibel. Melalui praktikum ini, dipelajari penggunaan ADT untuk mendefinisikan struktur data serta berbagai prosedur, seperti `createList()` untuk membuat list kosong, `alokasi()` untuk membuat node baru, `insertFirst()`, `insertLast()`, dan `insertAfter()` untuk menambahkan node, serta `deleteFirst()`, `deleteLast()`, dan `deleteAfter()` untuk menghapus node pada posisi tertentu. Selain itu, prosedur `printInfo()` digunakan untuk menampilkan data, `nbList()` untuk menghitung jumlah node, dan `deleteList()` untuk menghapus seluruh node dalam list. Hasil praktikum menunjukkan bahwa penyisipan node pada bagian awal menyebabkan urutan data menjadi terbalik dari urutan pemasukan, sedangkan operasi penghapusan dapat mengurangi jumlah node sesuai dengan posisi yang ditentukan hingga seluruh list menjadi kosong. Dengan demikian, praktikum ini memberikan pemahaman mengenai konsep pointer, pengelolaan memori, serta operasi dasar Linked List dalam mengelola data secara dinamis.
 
 ## Referensi
 [1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
