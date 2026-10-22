@@ -584,48 +584,16 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan5_Modul5/Unguided/SinglyList/Output%20SinglyList.png)
 
-penjelasan unguided 1 
+[1]Dimulai dari pembuatan singly linked list, yaitu rantai node yang saling tersambung lewat pointer next, di mana setiap node menyimpan info sebagai data dan next sebagai alamat node berikutnya. Agar rantai ini bisa dipakai, kita perlu menyiapkan list kosong lebih dulu dengan CreateList, yang mengisi first dengan Nil. Setelah list siap, alokasi membuat node baru di memori dan mengisinya dengan data, lalu node tersebut dipasang ke list oleh insertFirst, yang menyambungkan next node baru ke node pertama lama sebelum menjadikannya first yang baru. Karena setiap node baru selalu dipasang di depan, data yang dimasukkan 2, 0, 8, 12, 9 akan tercetak terbalik saat printInfo menelusurinya, sehingga hasilnya 9 12 8 0 2. Terakhir, jika sebuah node sudah tidak dipakai, dealokasi mengembalikan memorinya ke sistem agar tidak terbuang.
 
-### 2. (isi dengan soal unguided 2)
+[2]Setelah list terisi, kita bisa mencari data tertentu di dalamnya, dan pekerjaan ini dilakukan oleh findElm. Fungsi ini menelusuri list dari node pertama sambil membandingkan info setiap node dengan nilai yang dicari. Jika nilainya sama, fungsi langsung mengembalikan alamat node tersebut, tetapi jika penelusuran sudah sampai Nil tanpa menemukan apa pun, fungsi mengembalikan Nil. Untuk mencari angka 8, penelusuran melewati node 9 dan 12 terlebih dahulu, lalu berhenti di node 8, sehingga program menampilkan “8 ditemukan dalam list”. Alamat yang dikembalikan inilah yang membuat findElm berguna, sebab hasilnya bisa langsung dipakai untuk operasi lain seperti insertAfter dan delAfter.
 
-```C++
-source code unguided 2
-```
-### Output Unguided 2 :
-
-##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 2
-
-### 3. (isi dengan soal unguided 3)
-
-```C++
-source code unguided 3
-```
-### Output Unguided 3 :
-
-##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-penjelasan unguided 3
+[3]Soal terakhir memakai cara penelusuran yang sama dengan printInfo dan findElm, tetapi tujuannya berbeda, yaitu menghitung jumlah semua data. Untuk itu, sumInfo menyiapkan variabel total yang bernilai 0, lalu menambahkan info dari setiap node yang dilewati selama berjalan dari first sampai Nil. Prosesnya berjalan 0+9=9, kemudian 9+12=21, 21+8=29, 29+0=29, dan terakhir 29+2=31, sehingga program menampilkan “Total info dari kelima elemen adalah 31”. Karena fungsi ini harus mengunjungi semua node satu per satu, waktu kerjanya O(n), sama seperti printInfo.
 
 ## Kesimpulan
-...
+<div align ="justify">Singly linked list adalah kumpulan node yang tersambung lewat pointer next dan hanya bisa diakses melalui first, sehingga hampir semua operasinya dilakukan dengan menelusuri node satu per satu dari first sampai Nil. Pola penelusuran inilah yang dipakai di seluruh latihan: insertFirst menaruh node di depan list sehingga data 2, 0, 8, 12, 9 tercetak terbalik menjadi 9 12 8 0 2, findElm mencari node dan mengembalikan alamatnya (atau Nil jika tidak ada) yang kemudian bisa dipakai untuk operasi seperti insertAfter dan delAfter, dan sumInfo menjumlahkan semua data hingga mendapat 31. Dari latihan ini terlihat bahwa penambahan di depan cepat (O(1)) sedangkan pencarian dan penjumlahan lebih lambat (O(n)), bahwa parameter & dipakai saat fungsi mengubah list dan tidak dipakai saat hanya membaca, serta bahwa memori node dari alokasi perlu dikembalikan dengan dealokasi.<div/>
 
 ## Referensi
 [1] Acharjya, P. P., Koley, S., & Barman, S. (2020). Analysis of the Complexity of Various Linked Lists. Turkish Journal of Computer and Mathematics Education, 11(2), 886–895. https://doi.org/10.17762/turcomat.v11i2.11883 
