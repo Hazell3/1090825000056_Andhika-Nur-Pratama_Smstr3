@@ -433,9 +433,9 @@ Program ini merupakan implementasi Singly Linked List dalam bahasa C++ untuk men
 
 ## Unguided 
 
-### 1. (Buatlah ADT Singly Linked list sebagai berikut di dalam file “Singlylist.h”)
-###    (Carilah elemen dengan info 8 dengan membuat fungsi baru. fungsi findElm( L : List, x : infotype ) : address)
-###    (Hitunglah jumlah total info seluruh elemen (9+12+8+0+2=31))
+###    [1](Buatlah ADT Singly Linked list sebagai berikut di dalam file “Singlylist.h”)
+###    [2](Carilah elemen dengan info 8 dengan membuat fungsi baru. fungsi findElm( L : List, x : infotype ) : address)
+###    [3](Hitunglah jumlah total info seluruh elemen (9+12+8+0+2=31))
 
 ```H
 #ifndef SINGLYLIST_H_INCLUDED
