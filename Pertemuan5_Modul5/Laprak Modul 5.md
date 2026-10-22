@@ -431,14 +431,6 @@ int main(){
 ```
 Program ini merupakan implementasi Singly Linked List dalam bahasa C++ untuk mengelola data buah yang terdiri dari nama, jumlah, dan harga. Program menyediakan berbagai operasi, mulai dari membuat list kosong, menambahkan node di awal, tengah, dan akhir, menampilkan serta menghitung jumlah node, memperbarui data buah, mencari data berdasarkan nama, alamat node, dan rentang harga, hingga menghapus node tertentu maupun seluruh isi list. Melalui program ini, kita dapat memahami cara kerja linked list dalam mengelola data secara dinamis menggunakan pointer dan alokasi memori.
 
-### 2. 
-
-```C++
-
-```
-penjelasan singkat guided 2
-
-
 ## Unguided 
 
 ### 1. (Buatlah ADT Singly Linked list sebagai berikut di dalam file “Singlylist.h”)
