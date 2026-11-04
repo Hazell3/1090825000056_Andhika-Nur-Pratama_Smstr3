@@ -289,7 +289,7 @@ penjelasan singkat guided 1
 
 ## Unguided 
 
-### 1. (isi dengan soal unguided 1)
+### 1. (Buatlah ADT Doubly Linked list sebagai berikut di dalam file “Doublylist.h”:)
 
 ```H
 #ifndef DOUBLYLIST_H
@@ -459,7 +459,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan6_Modul6/Unguided/DoublyList/Output%20Soal%201.png)
 
 Program yang membuat list kosong, lalu meminta 4 data kendaraan. Setiap data dicek dulu dengan findElm. Kalau nomor polisinya sudah ada, program mencetak “nomor polisi sudah terdaftar”. Kalau belum, data dimasukkan di belakang list dengan insertLast. Terakhir, printInfo mencetak isi list dari belakang ke depan.
 
@@ -484,7 +484,7 @@ Program yang membuat list kosong, lalu meminta 4 data kendaraan. Setiap data dic
 ### Output Unguided 2 :
 
 ##### Output 2
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan6_Modul6/Unguided/DoublyList/Output%20Soal%202.png)
 
 Setelah list terisi, program meminta nomor polisi yang dicari. findElm menelusuri list dari depan sampai menemukan nomor polisi yang cocok. Kalau ketemu, nomor polisi, warna, dan tahunnya ditampilkan. Kalau tidak, program mencetak “Data tidak ditemukan.”
 
@@ -519,7 +519,7 @@ Setelah list terisi, program meminta nomor polisi yang dicari. findElm menelusur
 ### Output Unguided 3 :
 
 ##### Output 3
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan6_Modul6/Unguided/DoublyList/Output%20Soal%203.png)
 
 Setelah list terisi, program meminta nomor polisi yang mau dihapus, lalu mencari elemennya. Kalau elemennya di depan, dipakai deleteFirst. Kalau di belakang, dipakai deleteLast. Kalau di tengah, dipakai deleteAfter pada elemen sebelumnya. Elemen yang sudah dilepas dibuang dari memori dengan dealokasi, lalu list yang tersisa dicetak.
 
