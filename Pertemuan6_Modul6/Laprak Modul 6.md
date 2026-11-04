@@ -285,7 +285,7 @@ int main() {
 }
 
 ```
-penjelasan singkat guided 1
+Program ini mendemonstrasikan semua operasi Doubly Linked List pada data barang: menambah empat barang (B001 sampai B004) dengan insert first, last, after, dan before, mencari satu barang, lalu menghapusnya satu per satu dengan delete after, before, first, dan last sampai list kosong, sambil mencetak isi list di setiap langkah.
 
 ## Unguided 
 
