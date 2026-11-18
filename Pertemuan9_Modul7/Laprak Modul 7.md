@@ -2,7 +2,7 @@
 <p align="center">Andhika Nur Pratama - 109082500056</p>
 
 ## Dasar Teori
-Stack atau tumpukan merupakan salah satu struktur data linear yang menyimpan sekumpulan data dengan menerapkan prinsip LIFO (Last In, First Out), yaitu data yang terakhir dimasukkan akan menjadi data pertama yang dikeluarkan. Stack memiliki bagian khusus yang disebut top untuk menunjukkan posisi elemen paling atas. Proses penambahan data disebut push, sedangkan proses penghapusan data disebut pop. Struktur data stack dapat diimplementasikan menggunakan array maupun linked list dan dimanfaatkan dalam berbagai aplikasi, seperti fitur undo-redo, pengelolaan riwayat aktivitas, serta pemrosesan ekspresi matematika [1][2].
+<div align="justify">Stack atau tumpukan merupakan salah satu struktur data linear yang menyimpan sekumpulan data dengan menerapkan prinsip LIFO (Last In, First Out), yaitu data yang terakhir dimasukkan akan menjadi data pertama yang dikeluarkan. Stack memiliki bagian khusus yang disebut top untuk menunjukkan posisi elemen paling atas. Proses penambahan data disebut push, sedangkan proses penghapusan data disebut pop. Struktur data stack dapat diimplementasikan menggunakan array maupun linked list dan dimanfaatkan dalam berbagai aplikasi, seperti fitur undo-redo, pengelolaan riwayat aktivitas, serta pemrosesan ekspresi matematika [1][2].</div>
 
 ### A. Pengertian Stack<br/>
 Stack merupakan struktur data linear yang menggunakan prinsip LIFO (Last In, First Out), yaitu elemen yang terakhir dimasukkan akan menjadi elemen pertama yang dikeluarkan. Stack memiliki bagian teratas yang disebut top sebagai penunjuk posisi elemen paling atas [1].
@@ -267,7 +267,7 @@ int main()
 ### Output Unguided 1 :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan9_Modul7/Unguided/Stack/Output%20Soal1.png)
 
 Program ini membuat stack dari array berukuran 20 dengan variabel top sebagai penunjuk elemen paling atas. Saat stack kosong, top = -1. push menaikkan top lalu mengisi data di posisi itu, sedangkan pop mengambil data di top lalu menurunkan top. printInfo mencetak isi stack dari atas ke bawah. balikStack membalik urutan dengan menukar elemen paling bawah dengan yang paling atas, lalu bergerak ke tengah. Di main, urutannya adalah push 3, 4, 8, pop (8 keluar), push 2, 3, pop (3 keluar), lalu push 9. Isi akhirnya 3, 4, 2, 9, jadi tercetak 9 2 4 3 dan setelah dibalik 3 4 2 9.
 
@@ -298,7 +298,7 @@ int main()
 ### Output Unguided 2 :
 
 ##### Output 
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan9_Modul7/Unguided/Stack/Output%20Soal2.png)
 
 Prosedur ini memasukkan angka ke stack sambil menjaga urutan, dengan elemen terbesar selalu di atas. Caranya, semua elemen di atas yang lebih besar dari x dipindahkan dulu ke stack bantu (temp). Setelah itu x di-push, lalu elemen di temp dikembalikan ke stack utama. Hasilnya stack selalu terurut, sehingga outputnya 9 8 4 3 3 2 dan setelah dibalik 2 3 3 4 8 9.
 
@@ -324,12 +324,12 @@ int main()
 ### Output Unguided 3 :
 
 ##### Output
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan9_Modul7/Unguided/Stack/Output%20Soal3.png)
 
 Prosedur ini membaca input satu karakter demi satu dengan cin.get() dan berhenti saat user menekan Enter. Setiap karakter angka diubah menjadi bilangan dengan c - '0' (misalnya karakter '4' menjadi 4), lalu di-push ke stack. Karena stack bersifat LIFO, input 4729601 tercetak dari atas sebagai 1 0 6 9 2 7 4, dan setelah dibalik menjadi 4 7 2 9 6 0 1.
 
 ## Kesimpulan
-...
+<div align="justify">Stack adalah struktur data dengan prinsip LIFO (Last In First Out), yaitu elemen yang terakhir masuk adalah yang pertama keluar, dan semua akses hanya lewat satu pintu bernama TOP dengan dua operasi utama, push (menambah) dan pop (mengambil). Stack bisa dibuat dengan pointer, yang ukurannya fleksibel tapi perlu mengatur memori, atau dengan array, yang ukurannya terbatas tapi lebih sederhana karena cukup mengatur variabel `top`. Dari latihan terbukti bahwa data yang masuk akan keluar dalam urutan terbalik (input `4729601` tercetak `1 0 6 9 2 7 4`), bahwa untuk menyisipkan elemen secara berurutan kita butuh stack bantu karena akses hanya bisa dari atas, dan bahwa stack bisa dibalik dengan menukar elemen dari ujung ke ujung. Aturan akses yang ketat inilah yang membuat stack berguna untuk kasus yang butuh urutan "terakhir masuk, pertama keluar", seperti membalik data, fitur undo, dan pemeriksaan kurung.</div>
 
 ## Referensi
 [1] S. Amaylia et al. (2025). Application of Stack Data Structure in Application Development. Journal of Advanced Systems Intelligence and Cybersecurity.
