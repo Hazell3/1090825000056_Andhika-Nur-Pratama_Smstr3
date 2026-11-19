@@ -479,7 +479,8 @@ Program ini mengimplementasikan struktur data Queue menggunakan Array dengan pri
 
 ## Unguided 
 
-### 1. (isi dengan soal unguided 1)(https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
+### 1. (Soal unguided 1)
+(https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan10_Modul8/Unguided/Queue1/Soal%20Queue1.png)
 
 ```H
 #ifndef QUEUE_H_INCLUDE
@@ -591,8 +592,8 @@ int main() {
 ```
 ### Output Unguided 1 :
 
-##### Output 1
-![Screenshot Output Unguided 1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+##### Output
+![Screenshot Output Unguided 1](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan10_Modul8/Unguided/Queue1/Output%20Queue%201.png)
 
 Queue ini memakai array berukuran 5 dengan head selalu diam di indeks 0, sedangkan tail yang bergerak. Antrean kosong ditandai head = -1 dan tail = -1, dan dianggap penuh kalau tail sudah di indeks 4. Saat enqueue, kalau antrean kosong head dan tail diisi 0, kalau tidak tail naik satu, lalu nilai baru disimpan di posisi tail. Saat dequeue, nilai di head diambil, lalu semua elemen sisanya digeser satu langkah ke depan dan tail turun satu. Kalau elemennya tinggal satu, antrean langsung dikosongkan lagi. Cara ini mudah dipahami karena mirip orang yang maju saat mengantre, tetapi kurang efisien karena setiap dequeue harus menggeser banyak elemen.
 
@@ -714,8 +715,8 @@ int main() {
 ```
 ### Output Unguided 2 :
 
-##### Output 1
-![Screenshot Output Unguided 2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+##### Output
+![Screenshot Output Unguided 2](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan10_Modul8/Unguided/Queue2/Output%20Queue%202.png)
 
 Di sini head dan tail sama-sama bergerak, jadi dequeue cukup menaikkan head satu tanpa menggeser elemen, dan itu lebih cepat. Antrean baru benar-benar penuh kalau head = 0 dan tail = 4. Kalau tail sudah di indeks 4 tetapi head sudah maju, ada ruang kosong di depan yang belum terpakai (penuh “semu”). Karena itu, saat enqueue, elemen yang ada digeser dulu ke awal array dan baru tail dinaikkan. enqueue pada antrean kosong tetap mengisi head dan tail dengan 0, dan dequeue pada elemen terakhir mengosongkan antrean. Pada contoh main, setelah dequeue pertama hasilnya 1 - 2 | 2 7, karena head pindah ke indeks 1.
 
@@ -832,8 +833,8 @@ int main() {
 ```
 ### Output Unguided 3 :
 
-##### Output 1
-![Screenshot Output Unguided 3](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+##### Output
+![Screenshot Output Unguided 3](https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan10_Modul8/Unguided/Queue3/Output%20Queue%203.png)
 
 Array dianggap melingkar seperti jam, jadi setelah indeks 4 posisi berikutnya kembali ke indeks 0, dan tidak ada pergeseran elemen sama sekali. Perputaran itu dibuat dengan rumus (indeks + 1) % 5 untuk menaikkan head maupun tail. Antrean penuh kalau posisi setelah tail sama dengan head, yaitu (tail + 1) % 5 == head, dan antrean kosong tidak dihitung penuh. Karena tail bisa berada sebelum head, printInfo mencetak dari head sampai tail dengan cara berputar menggunakan while, bukan for biasa. Sebagai contoh, hasil uji 2 - 1 | 3 4 5 6 7 berarti tail sudah berputar ke indeks 1 sementara head masih di indeks 2. Ini paling efisien dari ketiganya karena ruang kosong di depan langsung terpakai kembali.
 
