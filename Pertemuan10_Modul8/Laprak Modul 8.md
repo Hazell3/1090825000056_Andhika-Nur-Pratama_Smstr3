@@ -479,8 +479,7 @@ Program ini mengimplementasikan struktur data Queue menggunakan Array dengan pri
 
 ## Unguided 
 
-### 1. (Soal unguided 1)
-(https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan10_Modul8/Unguided/Queue1/Soal%20Queue1.png)
+### 1. (Soal unguided 1)(https://github.com/Hazell3/1090825000056_Andhika-Nur-Pratama_Smstr3/blob/main/Pertemuan10_Modul8/Unguided/Queue1/Soal%20Queue1.png)
 
 ```H
 #ifndef QUEUE_H_INCLUDE
