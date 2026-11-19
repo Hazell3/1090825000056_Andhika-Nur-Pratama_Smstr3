@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 8 - Queue (Bagian Pertama)</h1>
+# <h1 align="center">Laporan Praktikum Modul 8 - Queue</h1>
 <p align="center">Andhika Nur Pratama - 109082500056</p>
 
 ## Dasar Teori
